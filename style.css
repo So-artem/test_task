@@ -1,0 +1,81 @@
+.contact_form input {
+    height:26px;
+    width:250px;
+    padding:1px 5px;
+}
+.contact_form input, .contact_form textarea {
+    border:1px solid #aaa;
+    box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+    border-radius:2px;
+    background: #EBF8F8;
+}
+
+button.submit {
+    background-color: #006363;
+    background: -webkit-gradient(linear, left top, left bottom, from(#006363), to(#1D7373));
+    background: -webkit-linear-gradient(top, #006363, #1D7373);
+    background: -moz-linear-gradient(top, #006363, #1D7373);
+    background: -ms-linear-gradient(top, #006363, #1D7373);
+    background: -o-linear-gradient(top, #006363, #1D7373);
+    background: linear-gradient(top, #006363, #1D7373);
+    border: 1px solid #006363;
+    border-bottom: 1px solid #006363;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    box-shadow: inset 0 1px 0 0 #006363;
+    -webkit-box-shadow: 0 1px 0 0 #006363 inset ;
+    -moz-box-shadow: 0 1px 0 0 #006363 inset;
+    -ms-box-shadow: 0 1px 0 0 #006363 inset;
+    -o-box-shadow: 0 1px 0 0 #006363 inset;
+    color: #ffebcd;
+    font-weight: bold;
+    padding: 6px 20px;
+    text-align: center;
+    text-shadow: 0 -1px 0 #396715;
+}
+
+
+.table_sort table {
+    border-collapse: collapse;
+}
+
+.table_sort th {
+    color: #ffebcd;
+    background: #006363;
+    cursor: pointer;
+}
+
+.table_sort td,
+.table_sort th {
+    width: 120px;
+    height: 50px;
+    text-align: center;
+    border: 0.5px solid #006363;
+}
+.table_sort {border: 1.5px solid #006363;}
+
+.table_sort tbody tr:nth-child(even) {
+    background: #DCF0F0;
+}
+
+th.sorted[data-order="1"],
+th.sorted[data-order="-1"] {
+    position: relative;
+}
+
+th.sorted[data-order="1"]::after,
+th.sorted[data-order="-1"]::after {
+    right: 2px;
+    position: absolute;
+}
+
+th.sorted[data-order="-1"]::after {
+	content: "▼"
+}
+
+th.sorted[data-order="1"]::after {
+	content: "▲"
+}
